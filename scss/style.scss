@@ -8,25 +8,31 @@
 /* color de fondo*/
 body {
     background-color: white;
-    
+
+    header {
+        h1 {
+            display: flex;
+            justify-content: flex-start;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            margin-left: 180px;
+            font-family: 'Taviraj', serif;
+            font-weight: 300;
+            font-style: italic;
+            font-size: 50px;
+        }
+
+        nav {
+            ul {
+                font-family: 'Taviraj', serif;
+                font-weight: 300;
+
+            }
+        }
+    }
+
 }
 
-header h1 {
-    display: flex;
-    justify-content: flex-start;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    margin-left: 180px;
-    font-family: 'Taviraj', serif;
-    font-weight: 300;
-    font-style: italic;
-    font-size: 50px;
-}
-
-header nav ul {
-    font-family: 'Taviraj', serif;
-    font-weight: 300;
-}
 
 .carousel-inner {
     max-height: 35rem;
@@ -122,53 +128,49 @@ main {
 }
 
 
-
-
 /* recetas fiestas patrias, subtitulo, ingredientes, preparacion */
 
-main h2 {
-    font-size: 30px;
+main {
+    h2 {
+        font-size: 30px;
+
+        h3 {
+            font-size: 25px;
+            font-family: 'Taviraj', serif;
+        }
+
+        ul {
+            /* lista ingredientes*/
+            display: flex;
+            flex-direction: column;
+            list-style: circle;
+            font-family: 'Taviraj', serif;
+            border: 3px #FFB662 solid;
+            padding: 25px;
+            font-style: italic;
+            font-size: 20px;
+
+            .pino {
+                /*imagen pino*/
+                padding: 10px;
+                width: 80%;
+                height: auto;
+
+            }
+
+            ol {
+                /* lista preparacion */
+
+                list-style: decimal;
+                font-family: 'Taviraj', serif;
+                padding: 30px;
+                margin-right: 5rem;
+                font-size: 20px;
+            }
+
+        }
+    }
 }
-
-main h3 {
-
-    font-size: 25px;
-    font-family: 'Taviraj', serif;
-
-}
-
-main ul {
-    /* lista ingredientes*/
-
-    display: flex;
-    flex-direction: column;
-    list-style: circle;
-    font-family: 'Taviraj', serif;
-    border: 3px #FFB662 solid;
-    padding: 25px;
-    font-style: italic;
-    font-size: 20px;
-}
-
-.pino {
-    /*imagen pino*/
-    padding: 10px;
-    width: 80%;
-    height: auto;
-}
-
-main ol {
-    /* lista preparacion */
-
-    list-style: decimal;
-    font-family: 'Taviraj', serif;
-    padding: 30px;
-    margin-right: 5rem;
-    font-size: 20px;
-
-
-}
-
 
 
 
@@ -186,7 +188,6 @@ main ol {
 
 }
 
-
 .vocabulario {
 
     display: flex;
@@ -201,27 +202,22 @@ main ol {
 
 }
 
-
-
 /*pie de pagina*/
 
 footer {
     display: flex;
     justify-content: center;
+
+    h2 {
+        background-color: rgb(219, 203, 150);
+        font-family: 'Taviraj', serif;
+        font-size: 20px;
+        width: 350px;
+        text-align: center;
+        padding: 1px 1px 1px 1px;
+        border: 3px solid rosybrown;
+    }
 }
-
-footer h2 {
-
-    background-color: rgb(219, 203, 150);
-    font-family: 'Taviraj', serif;
-    font-size: 20px;
-    width: 350px;
-    text-align: center;
-    padding: 1px 1px 1px 1px;
-    border: 3px solid rosybrown;
-
-}
-
 
 /* contactanos*/
 
@@ -234,8 +230,6 @@ footer h2 {
     font-size: 25px;
 
 }
-
-
 
 input {
     height: 40px;
