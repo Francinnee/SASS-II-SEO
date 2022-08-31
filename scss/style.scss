@@ -1,5 +1,6 @@
 @import "base/mixin";
-@import "base/extend";
+
+
 
 
 /*reset*/
@@ -75,22 +76,22 @@ main {
     @extend %parrafos;
 }
 
-
-.parrafo-dos {
+.parrafo-dos{
     grid-area: parrafo-dos;
     @extend %parrafos;
 }
+ 
+@import "base/extend";
 
-    
 
 .cazuela {
     /*img*/
     grid-area: amburguesa-uno;
     @include medidas(100%, auto);
     @include box-model-img;
-    
-    
-    
+
+
+
 }
 
 @keyframes aparecer {
@@ -108,7 +109,7 @@ main {
     grid-area: amburguesa-dos;
     @include medidas(100%, auto);
     @include box-model-img;
-    
+
 
 }
 
@@ -172,7 +173,7 @@ main {
 /* Vocabulario culinario y sobre nosotros*/
 
 .parrafo-tres {
-    
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -242,9 +243,9 @@ input {
         display: flex;
         flex-direction: column;
     }
-  
-  
-  
+
+
+
     header h1 {
         display: flex;
         justify-content: flex-start;
@@ -254,15 +255,15 @@ input {
         font-family: 'Taviraj', serif;
         font-style: italic;
         font-size: 35px;
-  
+
     }
-  
+
     header nav ul {
         font-family: 'Taviraj', serif;
         font-weight: 300;
     }
-  
-  
+
+
     main {
         gap: 8px;
         display: grid;
@@ -280,66 +281,66 @@ input {
         margin-bottom: 30px;
         margin-left: 50px;
         margin-right: 50px;
-  
-  
+
+
     }
-  
+
     .subtitulo {
         grid-area: subtitulo;
         font-size: 25px;
-  
+
     }
-  
+
     .parrafo-uno {
         grid-area: parrafo-uno;
         font-style: italic;
         padding: 20px;
         text-align: justify;
-  
-  
-  
+
+
+
     }
-  
+
     .parrafo-dos {
         grid-area: parrafo-dos;
         font-style: italic;
         padding-right: 90px;
         text-align: justify;
     }
-  
-    .cazuela{
+
+    .cazuela {
         grid-area: amburguesa-uno;
         align-items: flex-start;
         padding: 20px;
-  
+
     }
-  
+
     .empanada {
         grid-area: amburguesa-dos;
         align-items: flex-end;
         padding: 20px;
-  
-  
+
+
     }
-  
-  
-  
+
+
+
     /* recetas fiestas patrias, subtitulo, ingredientes, preparacion */
-  
+
     main h2 {
         font-size: 30px;
     }
-  
+
     main h3 {
-  
+
         font-size: 25px;
         font-family: 'Taviraj', serif;
-  
+
     }
-  
+
     main ul {
         /* lista ingredientes*/
-  
+
         font-size: 22px;
         list-style: circle;
         font-family: 'Taviraj', serif;
@@ -348,28 +349,28 @@ input {
         padding: 85px;
         font-style: italic;
     }
-  
+
     .pino {
         /*imagen pino*/
         padding: 10px;
         width: 80%;
         height: auto;
     }
-  
+
     main ol {
         /* lista preparacion */
-  
+
         list-style: decimal;
         font-family: 'Taviraj', serif;
         padding: 30px;
         margin-right: 5rem;
         font-size: 20px;
-  
-  
+
+
     }
-  
+
     /* Vocabulario culinario y sobre nosotros*/
-  
+
     .parrafo-tres {
         margin-left: 150px;
         margin-right: 150px;
@@ -380,12 +381,12 @@ input {
         font-style: italic;
         font-size: 30px;
         text-align: justify;
-  
+
     }
-  
-  
+
+
     .vocabulario {
-  
+
         display: flex;
         flex-direction: column;
         list-style: circle;
@@ -395,20 +396,20 @@ input {
         margin-bottom: 30px;
         margin-left: 150px;
         margin-right: 150px;
-  
+
     }
-  
-  
-  
+
+
+
     /*pie de pagina*/
-  
+
     footer {
         display: flex;
         justify-content: center;
     }
-  
+
     footer h2 {
-  
+
         background-color: rgb(224, 207, 148);
         font-family: 'Taviraj', serif;
         font-size: 20px;
@@ -416,28 +417,28 @@ input {
         text-align: center;
         padding: 1px 1px 1px 1px;
         border: 3px solid rgb(204, 155, 155);
-  
+
     }
-  
-  
+
+
     /* contactanos*/
-  
+
     .formulario {
         display: flex;
         flex-direction: column;
         margin-right: 350px;
         font-family: 'Taviraj', serif;
         font-size: 30px;
-  
-  
+
+
     }
-  
-  
-  
+
+
+
     input {
         height: 40px;
     }
-  
-  
-  
-  }
+
+
+
+}
