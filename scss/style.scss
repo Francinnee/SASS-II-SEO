@@ -1,3 +1,6 @@
+@import "base/mixin";
+
+
 /*reset*/
 
 * {
@@ -84,14 +87,11 @@ main {
 .cazuela {
     /*img*/
     grid-area: amburguesa-uno;
-    text-align: center;
-    padding: 20px;
-    width: 100%;
-    height: auto;
-    animation-duration: 3s;
-    animation-name: aparecer;
-    animation-iteration-count: initial;
-
+    @include medidas(100%, auto);
+    @include box-model-img;
+    
+    
+    
 }
 
 @keyframes aparecer {
@@ -107,13 +107,9 @@ main {
 .empanadas {
     /*img*/
     grid-area: amburguesa-dos;
-    text-align: center;
-    padding: 20px;
-    width: 100%;
-    height: auto;
-    animation-duration: 3s;
-    animation-name: aparecer;
-    animation-iteration-count: initial;
+    @include medidas(100%, auto);
+    @include box-model-img;
+    
 
 }
 

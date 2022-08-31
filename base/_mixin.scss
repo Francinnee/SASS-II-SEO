@@ -1,0 +1,14 @@
+@mixin medidas($width, $height){
+    width: $width;
+    height: $height;
+}
+
+//mixin sin parametros 
+
+@mixin box-model-img{
+    text-align: center;
+    padding: 20px;
+    animation-duration: 3s;
+    animation-name: aparecer;
+    animation-iteration-count: initial;
+}
