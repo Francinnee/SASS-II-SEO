@@ -72,20 +72,16 @@ main {
 
 .parrafo-uno {
     grid-area: parrafo-uno;
-    font-style: italic;
-    padding: 20px;
-    font-size: 20px;
+    @extend %parrafos;
 }
 
 
 .parrafo-dos {
     grid-area: parrafo-dos;
-    font-style: italic;
-    padding: 20px;
-    font-size: 20px;
-    
-   
+    @extend %parrafos;
 }
+
+    
 
 .cazuela {
     /*img*/

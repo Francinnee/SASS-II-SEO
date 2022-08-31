@@ -1,3 +1,8 @@
+.parrafo-uno, .parrafo-dos {
+  font-style: italic;
+  padding: 20px;
+  font-size: 20px; }
+
 /*reset*/
 * {
   margin: 0;
@@ -42,16 +47,10 @@ main {
   font-size: 30px; }
 
 .parrafo-uno {
-  grid-area: parrafo-uno;
-  font-style: italic;
-  padding: 20px;
-  font-size: 20px; }
+  grid-area: parrafo-uno; }
 
 .parrafo-dos {
-  grid-area: parrafo-dos;
-  font-style: italic;
-  padding: 20px;
-  font-size: 20px; }
+  grid-area: parrafo-dos; }
 
 .cazuela {
   /*img*/
