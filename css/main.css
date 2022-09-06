@@ -24,12 +24,12 @@ body {
   max-height: 35rem; }
 
 /*subtitulo y parrafos index*/
-main {
+.principal {
   gap: 8px;
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto;
-  grid-template-areas: "subtitulo subtitulo subtitulo" "parrafo-uno amburguesa-uno amburguesa-uno" "amburguesa-dos amburguesa-dos parrafo-dos";
+  grid-template-areas: "subtitulo subtitulo subtitulo" "parrafo-uno cazuela cazuela" "empanada empanada parrafo-dos";
   font-family: 'Taviraj', serif;
   text-align: justify;
   margin-top: 30px;
@@ -54,7 +54,7 @@ main {
 
 .cazuela {
   /*img*/
-  grid-area: amburguesa-uno;
+  grid-area: cazuela;
   width: 100%;
   height: auto;
   text-align: center;
@@ -71,7 +71,7 @@ main {
 
 .empanadas {
   /*img*/
-  grid-area: amburguesa-dos;
+  grid-area: empanada;
   width: 100%;
   height: auto;
   text-align: center;
@@ -87,6 +87,10 @@ main {
     opacity: 1; } }
 
 /* recetas fiestas patrias, subtitulo, ingredientes, preparacion */
+.card {
+  margin-top: 15px;
+  margin-bottom: 15px; }
+
 main h2 {
   font-size: 30px; }
   main h2 h3 {
