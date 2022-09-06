@@ -191,18 +191,27 @@ main {
 
     display: flex;
     flex-direction: column;
-    margin-left: 170px;
-    margin-right: 170px;
+    text-align: justify;
+    margin-left: 270px;
+    margin-right: 270px;
     margin-top: 30px;
     margin-bottom: 30px;
 
 
     li {
+        justify-content: center;
         list-style: circle;
         font-family: 'Taviraj', serif;
         font-size: 20px;
         padding: 10px;
-        
+
+    }
+
+    img {
+        padding: 20px;
+        width: 30%;
+        height: auto;
+
     }
 
 
