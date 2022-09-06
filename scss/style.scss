@@ -54,9 +54,9 @@ main {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
-    grid-template-areas: "subtitulo subtitulo"
-        "parrafo-uno amburguesa-uno"
-        "amburguesa-dos parrafo-dos";
+    grid-template-areas: "subtitulo subtitulo subtitulo"
+        "parrafo-uno amburguesa-uno amburguesa-uno"
+        "amburguesa-dos amburguesa-dos parrafo-dos";
     font-family: 'Taviraj', serif;
     text-align: justify;
     margin-top: 30px;
