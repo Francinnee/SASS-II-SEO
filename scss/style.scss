@@ -86,6 +86,8 @@ body {
 @import "base/extend";
 
 
+
+
 .cazuela {
     /*img*/
     grid-area: cazuela;
@@ -136,46 +138,62 @@ body {
 }
 
 main {
+    display: flex;
+    flex-direction: column;
+    margin-left: 270px;
+    margin-right: 270px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: 'Taviraj', serif;
+
+
+
     h2 {
-        font-size: 30px;
-
-        h3 {
-            font-size: 25px;
-            font-family: 'Taviraj', serif;
-        }
-
-        ul {
-            /* lista ingredientes*/
-            display: flex;
-            flex-direction: column;
-            list-style: circle;
-            font-family: 'Taviraj', serif;
-            border: 3px #FFB662 solid;
-            padding: 25px;
-            font-style: italic;
-            font-size: 20px;
-
-            .pino {
-                /*imagen pino*/
-                padding: 10px;
-                width: 80%;
-                height: auto;
-
-            }
-
-            ol {
-                /* lista preparacion */
-
-                list-style: decimal;
-                font-family: 'Taviraj', serif;
-                padding: 30px;
-                margin-right: 5rem;
-                font-size: 20px;
-            }
-
-        }
+        font-size: 35px;
     }
+
+
+    h3 {
+        font-size: 25px;
+
+    }
+
+    .recetasimg {
+        padding: 20px;
+        width: 45%;
+        height: auto;
+
+
+
+
+    }
+
+
+    ul {
+        /* lista ingredientes*/
+
+        list-style: circle;
+        font-family: 'Taviraj', serif;
+        padding: 25px;
+        font-style: italic;
+        font-size: 20px;
+
+        ol {
+            /* lista preparacion */
+
+            list-style: decimal;
+            font-family: 'Taviraj', serif;
+            padding: 30px;
+            margin-right: 5rem;
+            font-size: 20px;
+        }
+
+    }
+
+
+
 }
+
 
 
 
@@ -183,14 +201,11 @@ main {
 
 .parrafo-tres {
 
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     font-family: 'Taviraj', serif;
     font-style: italic;
     font-size: 20px;
-    margin-left: 195px;
-    margin-right: 180px;
+
 
 }
 
@@ -199,8 +214,6 @@ main {
     display: flex;
     flex-direction: column;
     text-align: justify;
-    margin-left: 270px;
-    margin-right: 270px;
     margin-top: 30px;
     margin-bottom: 30px;
 
@@ -267,166 +280,229 @@ input {
 
 @media screen and (max-width:768px) {
 
-    header {
-        display: flex;
-        flex-direction: column;
+    body {
+        background-color: map-get($map: $body, $key: color-body);
+
+        header {
+            h1 {
+                display: flex;
+                justify-content: flex-start;
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+                margin-left: 180px;
+                font-family: 'Taviraj', serif;
+                font-weight: 300;
+                font-style: italic;
+                font-size: 50px;
+            }
+
+            nav {
+                ul {
+                    font-family: 'Taviraj', serif;
+                    font-weight: 300;
+
+                }
+            }
+        }
+
+    }
+
+
+    .carousel-inner {
+        max-height: 35rem;
     }
 
 
 
-    header h1 {
-        display: flex;
-        justify-content: flex-start;
-        margin-bottom: 1rem;
-        margin-left: 3rem;
-        margin-right: 3rem;
-        font-family: 'Taviraj', serif;
-        font-style: italic;
-        font-size: 35px;
+    /*subtitulo y parrafos index*/
 
-    }
-
-    header nav ul {
-        font-family: 'Taviraj', serif;
-        font-weight: 300;
-    }
-
-
-    main {
+    .principal {
         gap: 8px;
         display: grid;
         grid-template-columns: auto;
         grid-template-rows: auto;
-        grid-template-areas: "subtitulo"
-            "subtitulo"
-            "parrafo-uno"
-            "amburguesa-uno"
-            "parrafo-dos"
-            "amburguesa-dos";
+        grid-template-areas: "subtitulo subtitulo"
+                             "parrafo-uno cazuela "
+                             "empanada parrafo-dos";
         font-family: 'Taviraj', serif;
         text-align: justify;
         margin-top: 30px;
         margin-bottom: 30px;
-        margin-left: 50px;
-        margin-right: 50px;
+        margin-left: 195px;
+        margin-right: 180px;
 
 
     }
 
     .subtitulo {
         grid-area: subtitulo;
-        font-size: 25px;
-
+        font-size: 30px;
     }
+
 
     .parrafo-uno {
         grid-area: parrafo-uno;
-        font-style: italic;
-        padding: 20px;
-        text-align: justify;
-
-
-
+        @extend %parrafos;
     }
 
     .parrafo-dos {
         grid-area: parrafo-dos;
-        font-style: italic;
-        padding-right: 90px;
-        text-align: justify;
+        @extend %parrafos;
     }
+
+    @import "base/extend";
+
+
+
 
     .cazuela {
-        grid-area: amburguesa-uno;
-        align-items: flex-start;
-        padding: 20px;
+        /*img*/
+        grid-area: cazuela;
+        @include medidas(100%, auto);
+        @include box-model-img;
 
-    }
-
-    .empanada {
-        grid-area: amburguesa-dos;
-        align-items: flex-end;
-        padding: 20px;
 
 
     }
 
+    @keyframes aparecer {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .empanadas {
+        /*img*/
+        grid-area: empanada;
+        @include medidas(100%, auto);
+        @include box-model-img;
+
+
+    }
+
+    @keyframes aparecer {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
 
 
     /* recetas fiestas patrias, subtitulo, ingredientes, preparacion */
 
-    main h2 {
-        font-size: 30px;
-    }
+    .card {
+        margin-top: 15px;
+        margin-bottom: 15px;
 
-    main h3 {
-
-        font-size: 25px;
-        font-family: 'Taviraj', serif;
 
     }
 
-    main ul {
-        /* lista ingredientes*/
-
-        font-size: 22px;
-        list-style: circle;
+    main {
+        display: flex;
+        flex-direction: column;
+        margin-left: 270px;
+        margin-right: 270px;
+        margin-top: 30px;
+        margin-bottom: 30px;
         font-family: 'Taviraj', serif;
-        border-width: 10px;
-        border-style: none;
-        padding: 85px;
+
+
+
+        h2 {
+            font-size: 35px;
+        }
+
+
+        h3 {
+            font-size: 25px;
+
+        }
+
+        .recetasimg {
+            padding: 20px;
+            width: 45%;
+            height: auto;
+
+
+
+
+        }
+
+
+        ul {
+            /* lista ingredientes*/
+
+            list-style: circle;
+            font-family: 'Taviraj', serif;
+            padding: 25px;
+            font-style: italic;
+            font-size: 20px;
+
+            ol {
+                /* lista preparacion */
+
+                list-style: decimal;
+                font-family: 'Taviraj', serif;
+                padding: 30px;
+                margin-right: 5rem;
+                font-size: 20px;
+            }
+
+        }
+
+
+
+    }
+
+
+
+
+    /* Vocabulario culinario y sobre nosotros*/
+
+    .parrafo-tres {
+
+        justify-content: center;
+        font-family: 'Taviraj', serif;
         font-style: italic;
-    }
-
-    .pino {
-        /*imagen pino*/
-        padding: 10px;
-        width: 80%;
-        height: auto;
-    }
-
-    main ol {
-        /* lista preparacion */
-
-        list-style: decimal;
-        font-family: 'Taviraj', serif;
-        padding: 30px;
-        margin-right: 5rem;
         font-size: 20px;
 
 
     }
 
-    /* Vocabulario culinario y sobre nosotros*/
-
-    .parrafo-tres {
-        margin-left: 150px;
-        margin-right: 150px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        font-family: 'Taviraj', serif;
-        font-style: italic;
-        font-size: 30px;
-        text-align: justify;
-
-    }
-
-
     .vocabulario {
 
         display: flex;
         flex-direction: column;
-        list-style: circle;
-        font-family: 'Taviraj', serif;
-        font-size: 30px;
+        text-align: justify;
         margin-top: 30px;
         margin-bottom: 30px;
-        margin-left: 150px;
-        margin-right: 150px;
+
+
+        li {
+            justify-content: center;
+            list-style: circle;
+            font-family: 'Taviraj', serif;
+            font-size: 20px;
+            padding: 10px;
+
+        }
+
+        img {
+            padding: 20px;
+            width: 30%;
+            height: auto;
+
+        }
+
 
     }
-
 
 
     /*pie de pagina*/
@@ -434,20 +510,18 @@ input {
     footer {
         display: flex;
         justify-content: center;
+
+        h2 {
+            background-color: rgb(219, 203, 150);
+            font-family: 'Taviraj', serif;
+            font-size: 20px;
+            width: 350px;
+            text-align: center;
+            padding: 1px 1px 1px 1px;
+            border: 3px solid rosybrown;
+
+        }
     }
-
-    footer h2 {
-
-        background-color: rgb(224, 207, 148);
-        font-family: 'Taviraj', serif;
-        font-size: 20px;
-        width: 350px;
-        text-align: center;
-        padding: 1px 1px 1px 1px;
-        border: 3px solid rgb(204, 155, 155);
-
-    }
-
 
     /* contactanos*/
 
@@ -457,13 +531,18 @@ input {
         margin-right: 350px;
         font-family: 'Taviraj', serif;
         font-size: 30px;
-
+        font-size: 25px;
 
     }
-
-
 
     input {
         height: 40px;
+
     }
+
+
+
+
+
+
 }
