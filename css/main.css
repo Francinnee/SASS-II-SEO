@@ -102,7 +102,7 @@ main {
   main h2 {
     font-size: 35px; }
   main h3 {
-    font-size: 25px; }
+    font-size: 30px; }
   main .recetasimg {
     padding: 20px;
     width: 45%;
@@ -114,13 +114,19 @@ main {
     padding: 25px;
     font-style: italic;
     font-size: 20px; }
-    main ul ol {
-      /* lista preparacion */
-      list-style: decimal;
-      font-family: 'Taviraj', serif;
-      padding: 30px;
-      margin-right: 5rem;
-      font-size: 20px; }
+    main ul li {
+      font-size: 25px; }
+  main ol {
+    /* lista preparacion */
+    list-style: decimal;
+    font-family: 'Taviraj', serif;
+    padding: 30px;
+    margin-right: 5rem;
+    font-size: 20px; }
+    main ol li {
+      font-size: 25px; }
+      main ol li p {
+        font-size: 25px; }
 
 /* Vocabulario culinario y sobre nosotros*/
 .parrafo-tres {
@@ -133,8 +139,7 @@ main {
   display: flex;
   flex-direction: column;
   text-align: justify;
-  margin-top: 30px;
-  margin-bottom: 30px; }
+  margin-bottom: 20px; }
   .vocabulario li {
     justify-content: center;
     list-style: circle;
@@ -172,3 +177,324 @@ input {
   height: 40px; }
 
 /*===================================Mediaqueries==============================================*/
+@media screen and (max-width: 768px) {
+  .principal {
+    gap: 8px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "subtitulo subtitulo" "parrafo-uno parrafo-uno " "cazuela cazuela" "parrafo-dos parrafo-dos" "empanada empanada";
+    font-family: 'Taviraj', serif;
+    text-align: justify;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 120px;
+    margin-right: 120px; }
+  .subtitulo {
+    grid-area: subtitulo;
+    font-size: 40px; }
+  .parrafo-uno {
+    grid-area: parrafo-uno;
+    font-style: italic;
+    padding: 20px;
+    font-size: 30px; }
+  .parrafo-dos {
+    grid-area: parrafo-dos;
+    font-style: italic;
+    padding: 20px;
+    font-size: 30px; }
+  body {
+    background-color: white; }
+    body header h1 {
+      display: flex;
+      justify-content: flex-start;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      margin-left: 130px;
+      font-family: 'Taviraj', serif;
+      font-weight: 300;
+      font-style: italic;
+      font-size: 70px; }
+    body header nav ul {
+      font-family: 'Taviraj', serif;
+      font-weight: 300; }
+  .carousel-inner {
+    max-height: 35rem; }
+  /*subtitulo y parrafos index*/
+  .cazuela {
+    /*img*/
+    grid-area: cazuela;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 20px;
+    animation-duration: 3s;
+    animation-name: aparecer;
+    animation-iteration-count: initial; }
+  @keyframes aparecer {
+    0% {
+      opacity: 0; }
+    100% {
+      opacity: 1; } }
+  .empanadas {
+    /*img*/
+    grid-area: empanada;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 20px;
+    animation-duration: 3s;
+    animation-name: aparecer;
+    animation-iteration-count: initial; }
+  @keyframes aparecer {
+    0% {
+      opacity: 0; }
+    100% {
+      opacity: 1; } }
+  /* recetas fiestas patrias, subtitulo, ingredientes, preparacion */
+  .card {
+    margin-top: 15px;
+    margin-bottom: 15px; }
+  main {
+    display: flex;
+    flex-direction: column;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: 'Taviraj', serif; }
+    main h2 {
+      font-size: 40px; }
+    main h3 {
+      font-size: 40px; }
+    main .recetasimg {
+      padding: 20px;
+      width: 80%;
+      height: auto; }
+    main ul {
+      /* lista ingredientes*/
+      list-style: circle;
+      font-family: 'Taviraj', serif;
+      padding: 25px;
+      font-size: 30px; }
+    main ol {
+      /* lista preparacion */
+      list-style: decimal;
+      font-family: 'Taviraj', serif;
+      padding: 30px;
+      margin-right: 3rem;
+      font-size: 30px; }
+      main ol li {
+        font-size: 40px; }
+        main ol li p {
+          font-size: 30px;
+          text-align: justify; }
+  /* Vocabulario culinario y sobre nosotros*/
+  .parrafo-tres {
+    justify-content: center;
+    font-family: 'Taviraj', serif;
+    font-style: italic;
+    font-size: 30px; }
+  .vocabulario {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    margin-top: 30px;
+    margin-bottom: 30px; }
+    .vocabulario li {
+      justify-content: center;
+      list-style: circle;
+      font-family: 'Taviraj', serif;
+      font-size: 30px;
+      padding: 10px; }
+    .vocabulario img {
+      padding: 20px;
+      width: 90%;
+      height: auto; }
+  /*pie de pagina*/
+  footer {
+    display: flex;
+    justify-content: center; }
+    footer h2 {
+      background-color: #dbcb96;
+      font-family: 'Taviraj', serif;
+      font-size: 20px;
+      width: 350px;
+      text-align: center;
+      padding: 1px 1px 1px 1px;
+      border: 3px solid rosybrown; }
+  /* contactanos*/
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    margin-right: 237px;
+    margin-left: 100px;
+    font-family: 'Taviraj', serif;
+    font-size: 30px;
+    font-size: 25px; }
+    .formulario input {
+      height: 40px; } }
+
+@media screen and (max-width: 576px) {
+  .principal {
+    gap: 8px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "subtitulo " "parrafo-uno  " "cazuela " "parrafo-dos" "empanada";
+    font-family: 'Taviraj', serif;
+    text-align: justify;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+    margin-right: 60px;
+    justify-items: center; }
+  .subtitulo {
+    grid-area: subtitulo;
+    font-size: 35px; }
+  .parrafo-uno {
+    grid-area: parrafo-uno;
+    font-style: italic;
+    padding: 20px;
+    font-size: 30px; }
+  .parrafo-dos {
+    grid-area: parrafo-dos;
+    font-style: italic;
+    padding: 20px;
+    font-size: 30px; }
+  body {
+    background-color: white; }
+    body header h1 {
+      display: flex;
+      justify-content: center;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      margin-left: 13px;
+      font-family: 'Taviraj', serif;
+      font-weight: bold;
+      font-style: italic;
+      font-size: 37px; }
+    body header nav ul {
+      font-family: 'Taviraj', serif;
+      font-weight: 300; }
+  .carousel-inner {
+    max-height: 35rem; }
+  /*subtitulo y parrafos index*/
+  .cazuela {
+    /*img*/
+    grid-area: cazuela;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 20px;
+    animation-duration: 3s;
+    animation-name: aparecer;
+    animation-iteration-count: initial; }
+  @keyframes aparecer {
+    0% {
+      opacity: 0; }
+    100% {
+      opacity: 1; } }
+  .empanadas {
+    /*img*/
+    grid-area: empanada;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 20px;
+    animation-duration: 3s;
+    animation-name: aparecer;
+    animation-iteration-count: initial; }
+  @keyframes aparecer {
+    0% {
+      opacity: 0; }
+    100% {
+      opacity: 1; } }
+  /* recetas fiestas patrias, subtitulo, ingredientes, preparacion */
+  .card {
+    margin-top: 15px;
+    margin-bottom: 15px; }
+  main {
+    display: flex;
+    flex-direction: column;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: 'Taviraj', serif; }
+    main h2 {
+      font-size: 40px; }
+    main h3 {
+      font-size: 40px; }
+    main .recetasimg {
+      padding: 20px;
+      width: 100%;
+      height: auto; }
+    main ul {
+      /* lista ingredientes*/
+      list-style: circle;
+      font-family: 'Taviraj', serif;
+      padding: 25px;
+      font-size: 30px; }
+      main ul li {
+        font-size: 35px; }
+    main ol {
+      /* lista preparacion */
+      list-style: decimal;
+      font-family: 'Taviraj', serif;
+      padding: 30px;
+      margin-right: -4rem;
+      margin-left: -4rem;
+      font-size: 30px; }
+      main ol p {
+        font-size: 35px;
+        text-align: justify; }
+  /* Vocabulario culinario y sobre nosotros*/
+  .parrafo-tres {
+    justify-content: center;
+    font-family: 'Taviraj', serif;
+    font-style: italic;
+    font-size: 30px;
+    margin-left: -50px;
+    margin-right: -70px; }
+  .vocabulario {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: -50px;
+    margin-right: -70px; }
+    .vocabulario li {
+      justify-content: center;
+      list-style: circle;
+      font-family: 'Taviraj', serif;
+      font-size: 30px;
+      padding: 10px; }
+    .vocabulario img {
+      padding: 20px;
+      width: 90%;
+      height: auto; }
+  /*pie de pagina*/
+  footer {
+    display: flex;
+    justify-content: center; }
+    footer h2 {
+      background-color: #dbcb96;
+      font-family: 'Taviraj', serif;
+      font-size: 20px;
+      width: 350px;
+      text-align: center;
+      padding: 1px 1px 1px 1px;
+      border: 3px solid rosybrown; }
+  /* contactanos*/
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    margin-right: 110px;
+    margin-left: 140px;
+    font-family: 'Taviraj', serif;
+    font-size: 30px;
+    font-size: 25px; }
+    .formulario input {
+      height: 40px; } }
