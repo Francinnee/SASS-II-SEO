@@ -29,9 +29,7 @@ body {
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto;
-  grid-template-areas: "subtitulo subtitulo subtitulo"
- "parrafo-uno cazuela cazuela"
- "empanada empanada parrafo-dos";
+  grid-template-areas: "subtitulo subtitulo subtitulo" "parrafo-uno cazuela cazuela" "empanada empanada parrafo-dos";
   font-family: 'Taviraj', serif;
   text-align: justify;
   margin-top: 30px;
@@ -155,22 +153,16 @@ main {
 
 /*pie de pagina*/
 footer {
-    display: flex;
-    justify-content: center;
-}
-
-footer h2 {
-
-    background-color: rgb(224, 212, 171);
+  display: flex;
+  justify-content: center; }
+  footer h2 {
+    background-color: #dbcb96;
     font-family: 'Taviraj', serif;
     font-size: 20px;
     width: 350px;
     text-align: center;
     padding: 1px 1px 1px 1px;
-    border: 3px solid rgb(194, 164, 164);
-
-}
-
+    border: 3px solid rosybrown; }
 
 /* contactanos*/
 .formulario {
@@ -191,11 +183,7 @@ input {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
-    grid-template-areas: "subtitulo subtitulo"
- "parrafo-uno parrafo-uno "
- "cazuela cazuela"
- "parrafo-dos parrafo-dos"
- "empanada empanada";
+    grid-template-areas: "subtitulo subtitulo" "parrafo-uno parrafo-uno " "cazuela cazuela" "parrafo-dos parrafo-dos" "empanada empanada";
     font-family: 'Taviraj', serif;
     text-align: justify;
     margin-top: 30px;
@@ -353,11 +341,7 @@ input {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
-    grid-template-areas: "subtitulo "
- "parrafo-uno  "
- "cazuela "
- "parrafo-dos"
- "empanada";
+    grid-template-areas: "subtitulo " "parrafo-uno  " "cazuela " "parrafo-dos" "empanada";
     font-family: 'Taviraj', serif;
     text-align: justify;
     margin-top: 30px;
