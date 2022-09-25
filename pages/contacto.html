@@ -73,44 +73,51 @@
 
     </header>
 
+    <main>
 
-    <form class="container">
 
-        <div class="formulario">
+        <form class="containerform">
 
-            <legend> Formulario de contacto </legend>
+            <div>
 
-            <div class="mb-3">
-                <label for="nombre" class="form-label"> Completa tu nombre </label>
-                <input type="text" class="form-control" id="nombre" placeholder="nombre">
+                <legend> Formulario de contacto </legend>
+
+                <div class="mb-3">
+                    <label for="nombre" class="form-label"> Completa tu nombre </label>
+                    <input type="text" class="form-control" id="nombre" placeholder="nombre">
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="form-label"> Completa tu email </label>
+                    <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                </div>
+
+                <div class="mb-3">
+                    <label for="Telefono" class="form-label"> Telefono </label>
+                    <input type="text" class="form-control" id="telefono" placeholder="completa tu telefono">
+                </div>
+
+
+
+                <div class="mb-3">
+                    <label for="Mensaje" class="form-label"> Mensaje </label>
+                    <textarea class="form-control" id="Mensaje" rows="3"></textarea>
+                </div>
+
+
+
+                <input class="btn btn-primary" type="submit" value="Submit">
+
             </div>
 
-            <div class="mb-3">
-                <label for="email" class="form-label"> Completa tu email </label>
-                <input type="email" class="form-control" id="email" placeholder="name@example.com">
-            </div>
 
-            <div class="mb-3">
-                <label for="Telefono" class="form-label"> Telefono </label>
-                <input type="text" class="form-control" id="telefono" placeholder="completa tu telefono">
-            </div>
+        </form>
 
+        
 
+    </main>
 
-            <div class="mb-3">
-                <label for="Mensaje" class="form-label"> Mensaje </label>
-                <textarea class="form-control" id="Mensaje" rows="3"></textarea>
-            </div>
-
-
-
-            <input class="btn btn-primary" type="submit" value="Submit">
-        </div>
-
-
-    </form>
-
-    <footer id="pie-de-pagina">
+    <footer class="bottom" id="pie-de-pagina">
         <img src="/img/logo.png" alt="recetas chilenas">
         <h2> Información</h2>
         <ul>

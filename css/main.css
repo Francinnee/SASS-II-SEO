@@ -181,16 +181,15 @@ footer {
     list-style: none; }
 
 /* contactanos*/
-.formulario {
+.containerform {
   display: flex;
-  flex-direction: column;
-  margin-right: 350px;
+  flex-direction: row;
+  justify-content: center;
   font-family: 'Taviraj', serif;
-  font-size: 30px;
-  font-size: 25px; }
-
-input {
-  height: 40px; }
+  font-size: 25px;
+  margin: 30px; }
+  .containerform div legend {
+    font-size: 35px; }
 
 /*===================================Mediaqueries==============================================*/
 @media screen and (max-width: 768px) {
