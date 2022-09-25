@@ -164,15 +164,18 @@ main {
 /*pie de pagina*/
 footer {
   display: flex;
-  justify-content: center; }
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f3f3f3;
+  font-family: 'Taviraj', serif;
+  font-size: 15px; }
+  footer img {
+    width: 10%; }
   footer h2 {
-    background-color: #dbcb96;
-    font-family: 'Taviraj', serif;
-    font-size: 20px;
-    width: 350px;
     text-align: center;
-    padding: 1px 1px 1px 1px;
-    border: 3px solid rosybrown; }
+    font-family: 'Taviraj', serif;
+    font-size: 15px; }
 
 /* contactanos*/
 .formulario {
