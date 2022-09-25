@@ -16,6 +16,10 @@
 /* color de fondo*/
 body {
     background-color: map-get($map: $body, $key: color-body);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 100vh;
 
 
     header {
@@ -268,11 +272,11 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    position: relative;
     align-items: center;
     background-color: rgb(243, 243, 243);
     font-family: 'Taviraj', serif;
     font-size: 15px;
+    margin-top: auto;
 
 
     img {
@@ -309,9 +313,9 @@ footer {
     font-family: 'Taviraj', serif;
     font-size: 25px;
     margin: 30px;
-    
-    div{
-        legend{
+
+    div {
+        legend {
             font-size: 35px;
 
         }
@@ -350,7 +354,7 @@ footer {
 
     .subtitulo {
         grid-area: subtitulo;
-        font-size: 40px;
+        font-size: 30px;
     }
 
 
@@ -358,7 +362,7 @@ footer {
         grid-area: parrafo-uno;
         font-style: italic;
         padding: 20px;
-        font-size: 30px;
+        font-size: 18px;
 
 
 
@@ -368,7 +372,7 @@ footer {
         grid-area: parrafo-dos;
         font-style: italic;
         padding: 20px;
-        font-size: 30px;
+        font-size: 18px;
 
     }
 
@@ -377,6 +381,10 @@ footer {
 
     body {
         background-color: map-get($map: $body, $key: color-body);
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        min-height: 100vh;
 
         header {
             h1 {
@@ -388,7 +396,7 @@ footer {
                 font-family: 'Taviraj', serif;
                 font-weight: 300;
                 font-style: italic;
-                font-size: 70px;
+                font-size: 50px;
             }
 
             nav {
@@ -476,12 +484,12 @@ footer {
 
 
         h2 {
-            font-size: 40px;
+            font-size: 30px;
         }
 
 
         h3 {
-            font-size: 40px;
+            font-size: 25px;
 
         }
 
@@ -499,7 +507,13 @@ footer {
             list-style: circle;
             font-family: 'Taviraj', serif;
             padding: 25px;
-            font-size: 30px;
+            font-size: 18px;
+
+            li {
+                font-size: 18px;
+            }
+
+
         }
 
         ol {
@@ -509,13 +523,13 @@ footer {
             font-family: 'Taviraj', serif;
             padding: 30px;
             margin-right: 3rem;
-            font-size: 30px;
+            font-size: 18px;
 
             li {
-                font-size: 40px;
+                font-size: 18px;
 
                 p {
-                    font-size: 30px;
+                    font-size: 18px;
                     text-align: justify;
                 }
             }
@@ -537,7 +551,7 @@ footer {
         justify-content: center;
         font-family: 'Taviraj', serif;
         font-style: italic;
-        font-size: 30px;
+        font-size: 20px;
 
 
     }
@@ -555,7 +569,7 @@ footer {
             justify-content: center;
             list-style: circle;
             font-family: 'Taviraj', serif;
-            font-size: 30px;
+            font-size: 18px;
             padding: 10px;
 
         }
@@ -575,20 +589,38 @@ footer {
 
     footer {
         display: flex;
-        justify-content: center;
+        flex-direction: row;
+        justify-content: space-around;
+        position: relative;
+        align-items: center;
+        background-color: rgb(243, 243, 243);
+        font-family: 'Taviraj', serif;
+        font-size: 10px;
+        margin-top: auto;
+
+
+
+
+        img {
+            width: 10%;
+
+        }
+
 
 
         h2 {
-            background-color: rgb(219, 203, 150);
-            font-family: 'Taviraj', serif;
-            font-size: 20px;
-            width: 350px;
             text-align: center;
-            padding: 1px 1px 1px 1px;
-            border: 3px solid rosybrown;
+            font-family: 'Taviraj', serif;
+            font-size: 10px;
+        }
 
+        ul {
+            li {
+                list-style: none;
+            }
         }
     }
+
 
     /* contactanos*/
 

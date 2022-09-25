@@ -5,7 +5,11 @@
 
 /* color de fondo*/
 body {
-  background-color: white; }
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-height: 100vh; }
   body header h1 {
     display: flex;
     justify-content: flex-start;
@@ -166,11 +170,11 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  position: relative;
   align-items: center;
   background-color: #f3f3f3;
   font-family: 'Taviraj', serif;
-  font-size: 15px; }
+  font-size: 15px;
+  margin-top: auto; }
   footer img {
     width: 10%; }
   footer h2 {
@@ -207,19 +211,23 @@ footer {
     margin-right: 120px; }
   .subtitulo {
     grid-area: subtitulo;
-    font-size: 40px; }
+    font-size: 30px; }
   .parrafo-uno {
     grid-area: parrafo-uno;
     font-style: italic;
     padding: 20px;
-    font-size: 30px; }
+    font-size: 18px; }
   .parrafo-dos {
     grid-area: parrafo-dos;
     font-style: italic;
     padding: 20px;
-    font-size: 30px; }
+    font-size: 18px; }
   body {
-    background-color: white; }
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 100vh; }
     body header h1 {
       display: flex;
       justify-content: flex-start;
@@ -229,7 +237,7 @@ footer {
       font-family: 'Taviraj', serif;
       font-weight: 300;
       font-style: italic;
-      font-size: 70px; }
+      font-size: 50px; }
     body header nav ul {
       font-family: 'Taviraj', serif;
       font-weight: 300; }
@@ -279,9 +287,9 @@ footer {
     margin-bottom: 30px;
     font-family: 'Taviraj', serif; }
     main h2 {
-      font-size: 40px; }
+      font-size: 30px; }
     main h3 {
-      font-size: 40px; }
+      font-size: 25px; }
     main .recetasimg {
       padding: 20px;
       width: 80%;
@@ -291,25 +299,27 @@ footer {
       list-style: circle;
       font-family: 'Taviraj', serif;
       padding: 25px;
-      font-size: 30px; }
+      font-size: 18px; }
+      main ul li {
+        font-size: 18px; }
     main ol {
       /* lista preparacion */
       list-style: decimal;
       font-family: 'Taviraj', serif;
       padding: 30px;
       margin-right: 3rem;
-      font-size: 30px; }
+      font-size: 18px; }
       main ol li {
-        font-size: 40px; }
+        font-size: 18px; }
         main ol li p {
-          font-size: 30px;
+          font-size: 18px;
           text-align: justify; }
   /* Vocabulario culinario y sobre nosotros*/
   .parrafo-tres {
     justify-content: center;
     font-family: 'Taviraj', serif;
     font-style: italic;
-    font-size: 30px; }
+    font-size: 20px; }
   .vocabulario {
     display: flex;
     flex-direction: column;
@@ -320,7 +330,7 @@ footer {
       justify-content: center;
       list-style: circle;
       font-family: 'Taviraj', serif;
-      font-size: 30px;
+      font-size: 18px;
       padding: 10px; }
     .vocabulario img {
       padding: 20px;
@@ -329,15 +339,22 @@ footer {
   /*pie de pagina*/
   footer {
     display: flex;
-    justify-content: center; }
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+    align-items: center;
+    background-color: #f3f3f3;
+    font-family: 'Taviraj', serif;
+    font-size: 10px;
+    margin-top: auto; }
+    footer img {
+      width: 10%; }
     footer h2 {
-      background-color: #dbcb96;
-      font-family: 'Taviraj', serif;
-      font-size: 20px;
-      width: 350px;
       text-align: center;
-      padding: 1px 1px 1px 1px;
-      border: 3px solid rosybrown; }
+      font-family: 'Taviraj', serif;
+      font-size: 10px; }
+    footer ul li {
+      list-style: none; }
   /* contactanos*/
   .formulario {
     display: flex;
