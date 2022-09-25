@@ -207,11 +207,11 @@ footer {
     text-align: justify;
     margin-top: 30px;
     margin-bottom: 30px;
-    margin-left: 120px;
-    margin-right: 120px; }
+    margin-left: 30px;
+    margin-right: 30px; }
   .subtitulo {
     grid-area: subtitulo;
-    font-size: 30px; }
+    font-size: 28px; }
   .parrafo-uno {
     grid-area: parrafo-uno;
     font-style: italic;
@@ -237,7 +237,7 @@ footer {
       font-family: 'Taviraj', serif;
       font-weight: 300;
       font-style: italic;
-      font-size: 50px; }
+      font-size: 40px; }
     body header nav ul {
       font-family: 'Taviraj', serif;
       font-weight: 300; }
@@ -281,8 +281,8 @@ footer {
   main {
     display: flex;
     flex-direction: column;
-    margin-left: 120px;
-    margin-right: 120px;
+    margin-left: 30px;
+    margin-right: 30px;
     margin-top: 30px;
     margin-bottom: 30px;
     font-family: 'Taviraj', serif; }
@@ -356,17 +356,17 @@ footer {
     footer ul li {
       list-style: none; }
   /* contactanos*/
-  .formulario {
+  .containerform {
     display: flex;
-    flex-direction: column;
-    margin-right: 237px;
-    margin-left: 100px;
+    flex-direction: row;
+    justify-content: center;
     font-family: 'Taviraj', serif;
-    font-size: 30px;
-    font-size: 25px; }
-    .formulario input {
-      height: 40px; } }
+    font-size: 23px;
+    margin: 30px; }
+    .containerform div legend {
+      font-size: 30px; } }
 
+/*=============================================Mediaqueries========================================================*/
 @media screen and (max-width: 576px) {
   .principal {
     gap: 8px;
@@ -378,24 +378,28 @@ footer {
     text-align: justify;
     margin-top: 30px;
     margin-bottom: 30px;
-    margin-left: 50px;
-    margin-right: 60px;
+    margin-left: 9px;
+    margin-right: 9px;
     justify-items: center; }
   .subtitulo {
     grid-area: subtitulo;
-    font-size: 35px; }
+    font-size: 25px; }
   .parrafo-uno {
     grid-area: parrafo-uno;
     font-style: italic;
     padding: 20px;
-    font-size: 30px; }
+    font-size: 15px; }
   .parrafo-dos {
     grid-area: parrafo-dos;
     font-style: italic;
     padding: 20px;
-    font-size: 30px; }
+    font-size: 15px; }
   body {
-    background-color: white; }
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 100vh; }
     body header h1 {
       display: flex;
       justify-content: center;
@@ -449,15 +453,15 @@ footer {
   main {
     display: flex;
     flex-direction: column;
-    margin-left: 120px;
-    margin-right: 120px;
+    margin-left: 10px;
+    margin-right: 10px;
     margin-top: 30px;
     margin-bottom: 30px;
     font-family: 'Taviraj', serif; }
     main h2 {
-      font-size: 40px; }
+      font-size: 25px; }
     main h3 {
-      font-size: 40px; }
+      font-size: 18px; }
     main .recetasimg {
       padding: 20px;
       width: 100%;
@@ -467,41 +471,45 @@ footer {
       list-style: circle;
       font-family: 'Taviraj', serif;
       padding: 25px;
-      font-size: 30px; }
+      font-size: 15px;
+      margin-right: 45px;
+      margin-left: 20px; }
       main ul li {
-        font-size: 35px; }
+        font-size: 15px; }
     main ol {
       /* lista preparacion */
       list-style: decimal;
       font-family: 'Taviraj', serif;
       padding: 30px;
-      margin-right: -4rem;
-      margin-left: -4rem;
-      font-size: 30px; }
-      main ol p {
-        font-size: 35px;
-        text-align: justify; }
+      margin-right: 40px;
+      margin-left: 20px;
+      font-size: 15px; }
+      main ol li {
+        font-size: 15; }
+        main ol li p {
+          font-size: 15px;
+          text-align: justify; }
   /* Vocabulario culinario y sobre nosotros*/
   .parrafo-tres {
     justify-content: center;
     font-family: 'Taviraj', serif;
     font-style: italic;
-    font-size: 30px;
-    margin-left: -50px;
-    margin-right: -70px; }
+    font-size: 15px;
+    margin-left: 5px;
+    margin-right: 5px; }
   .vocabulario {
     display: flex;
     flex-direction: column;
     text-align: justify;
-    margin-top: 30px;
+    margin-top: 15px;
     margin-bottom: 30px;
-    margin-left: -50px;
-    margin-right: -70px; }
+    margin-left: 10px;
+    margin-right: 10px; }
     .vocabulario li {
       justify-content: center;
       list-style: circle;
       font-family: 'Taviraj', serif;
-      font-size: 30px;
+      font-size: 15px;
       padding: 10px; }
     .vocabulario img {
       padding: 20px;
@@ -510,23 +518,29 @@ footer {
   /*pie de pagina*/
   footer {
     display: flex;
-    justify-content: center; }
-    footer h2 {
-      background-color: #dbcb96;
-      font-family: 'Taviraj', serif;
-      font-size: 20px;
-      width: 350px;
-      text-align: center;
-      padding: 1px 1px 1px 1px;
-      border: 3px solid rosybrown; }
-  /* contactanos*/
-  .formulario {
-    display: flex;
-    flex-direction: column;
-    margin-right: 110px;
-    margin-left: 140px;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+    align-items: center;
+    background-color: #f3f3f3;
     font-family: 'Taviraj', serif;
-    font-size: 30px;
-    font-size: 25px; }
-    .formulario input {
-      height: 40px; } }
+    font-size: 10px;
+    margin-top: auto; }
+    footer img {
+      width: 10%; }
+    footer h2 {
+      text-align: center;
+      font-family: 'Taviraj', serif;
+      font-size: 10px; }
+    footer ul li {
+      list-style: none; }
+  /* contactanos*/
+  .containerform {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'Taviraj', serif;
+    font-size: 18px;
+    margin: 30px; }
+    .containerform div legend {
+      font-size: 25px; } }
