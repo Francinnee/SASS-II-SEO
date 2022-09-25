@@ -166,6 +166,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  position: relative;
   align-items: center;
   background-color: #f3f3f3;
   font-family: 'Taviraj', serif;
@@ -176,6 +177,8 @@ footer {
     text-align: center;
     font-family: 'Taviraj', serif;
     font-size: 15px; }
+  footer ul li {
+    list-style: none; }
 
 /* contactanos*/
 .formulario {
